@@ -32,7 +32,10 @@ echo "# git_test" >> README.md
 vi git-notes.txt
 git add .
 git commit -m "initial commit"
+git branch -M master
 git remote add origin git@github.com:ajithc16/git_test.git
 git remote -v
 git push -f origin master
 
+git status
+git log
