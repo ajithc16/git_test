@@ -22,3 +22,17 @@ git add .
 git commit -m "Added index file"
 git push origin master 
 
+
+# add local dir to remote repo
+mkdir git_test
+cd git_test/
+git init 
+cp ../hello-world/git-notes.txt git-notes.txt
+echo "# git_test" >> README.md
+vi git-notes.txt
+git add .
+git commit -m "initial commit"
+git remote add origin git@github.com:ajithc16/git_test.git
+git remote -v
+git push -f origin master
+
